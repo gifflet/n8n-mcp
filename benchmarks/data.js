@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754501730851,
+  "lastUpdate": 1754508163828,
   "repoUrl": "https://github.com/gifflet/n8n-mcp",
   "entries": {
     "n8n-mcp Benchmarks": [
@@ -104,6 +104,58 @@ window.BENCHMARK_DATA = {
             "unit": "ms",
             "range": 0.4192,
             "extra": "15004 ops/sec"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "guisousa09@hotmail.com",
+            "name": "gifflet",
+            "username": "gifflet"
+          },
+          "committer": {
+            "email": "guisousa09@hotmail.com",
+            "name": "gifflet",
+            "username": "gifflet"
+          },
+          "distinct": true,
+          "id": "95296a14467dd4163e4c01508340066117bca995",
+          "message": "feat(n8n-cert): add support for self-signed SSL certificates via N8N_CERT_PATH",
+          "timestamp": "2025-08-06T16:20:57-03:00",
+          "tree_id": "0209da65bd34260771586a734961e60cb5ff3a35",
+          "url": "https://github.com/gifflet/n8n-mcp/commit/95296a14467dd4163e4c01508340066117bca995"
+        },
+        "date": 1754508163171,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "sample - array sorting - small",
+            "value": 0.0188,
+            "unit": "ms",
+            "range": 0.3276,
+            "extra": "53128 ops/sec"
+          },
+          {
+            "name": "sample - array sorting - large",
+            "value": 3.2123,
+            "unit": "ms",
+            "range": 1.8989000000000003,
+            "extra": "311 ops/sec"
+          },
+          {
+            "name": "sample - string concatenation",
+            "value": 0.0052,
+            "unit": "ms",
+            "range": 0.3272,
+            "extra": "193108 ops/sec"
+          },
+          {
+            "name": "sample - object creation",
+            "value": 0.0669,
+            "unit": "ms",
+            "range": 0.4426,
+            "extra": "14954 ops/sec"
           }
         ]
       }
