@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754403411776,
+  "lastUpdate": 1754501730851,
   "repoUrl": "https://github.com/gifflet/n8n-mcp",
   "entries": {
     "n8n-mcp Benchmarks": [
@@ -52,6 +52,58 @@ window.BENCHMARK_DATA = {
             "unit": "ms",
             "range": 0.3145,
             "extra": "15028 ops/sec"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "guisousa09@hotmail.com",
+            "name": "gifflet",
+            "username": "gifflet"
+          },
+          "committer": {
+            "email": "guisousa09@hotmail.com",
+            "name": "gifflet",
+            "username": "gifflet"
+          },
+          "distinct": true,
+          "id": "06e826abdbc2dcf48475ffb01167608f94abfcc0",
+          "message": "feat(n8n): add support for custom SSL certificate via N8N_CERT_PATH",
+          "timestamp": "2025-08-06T12:00:34-03:00",
+          "tree_id": "df337445459bacc34a0a33aeff29e89912c49e47",
+          "url": "https://github.com/gifflet/n8n-mcp/commit/06e826abdbc2dcf48475ffb01167608f94abfcc0"
+        },
+        "date": 1754501730554,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "sample - array sorting - small",
+            "value": 0.0191,
+            "unit": "ms",
+            "range": 0.32,
+            "extra": "52325 ops/sec"
+          },
+          {
+            "name": "sample - array sorting - large",
+            "value": 3.1526,
+            "unit": "ms",
+            "range": 0.6473,
+            "extra": "317 ops/sec"
+          },
+          {
+            "name": "sample - string concatenation",
+            "value": 0.0048,
+            "unit": "ms",
+            "range": 0.2696,
+            "extra": "210235 ops/sec"
+          },
+          {
+            "name": "sample - object creation",
+            "value": 0.0666,
+            "unit": "ms",
+            "range": 0.4192,
+            "extra": "15004 ops/sec"
           }
         ]
       }
