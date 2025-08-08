@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754508163828,
+  "lastUpdate": 1754665029534,
   "repoUrl": "https://github.com/gifflet/n8n-mcp",
   "entries": {
     "n8n-mcp Benchmarks": [
@@ -156,6 +156,58 @@ window.BENCHMARK_DATA = {
             "unit": "ms",
             "range": 0.4426,
             "extra": "14954 ops/sec"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "guisousa09@hotmail.com",
+            "name": "gifflet",
+            "username": "gifflet"
+          },
+          "committer": {
+            "email": "guisousa09@hotmail.com",
+            "name": "gifflet",
+            "username": "gifflet"
+          },
+          "distinct": true,
+          "id": "ebd784330cf76b660579d092039969aa69f8a978",
+          "message": "feat(security): add SSL/TLS custom cert support and optional SSL verification skip\n\n- Enhance SSL/TLS configuration with support for custom CA or self-signed certificates via N8N_CERT_PATH.\n- Introduce N8N_SKIP_SSL_VERIFICATION environment variable to optionally disable SSL cert verification (for development only).\n- Add detailed SSL/TLS troubleshooting guide documentation with common errors, fixes, and best practices.\n- Update n8n API client to use custom cert and conditionally disable SSL verification with proper warnings.\n- Improve logging to warn about insecure SSL skip usage.",
+          "timestamp": "2025-08-08T11:55:19-03:00",
+          "tree_id": "8ea7f23dd13d86d44725fb9666f6739f5734b5d9",
+          "url": "https://github.com/gifflet/n8n-mcp/commit/ebd784330cf76b660579d092039969aa69f8a978"
+        },
+        "date": 1754665029054,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "sample - array sorting - small",
+            "value": 0.0188,
+            "unit": "ms",
+            "range": 0.284,
+            "extra": "53138 ops/sec"
+          },
+          {
+            "name": "sample - array sorting - large",
+            "value": 3.1487,
+            "unit": "ms",
+            "range": 0.5531000000000001,
+            "extra": "318 ops/sec"
+          },
+          {
+            "name": "sample - string concatenation",
+            "value": 0.0049,
+            "unit": "ms",
+            "range": 0.2818,
+            "extra": "204423 ops/sec"
+          },
+          {
+            "name": "sample - object creation",
+            "value": 0.0697,
+            "unit": "ms",
+            "range": 0.4859,
+            "extra": "14355 ops/sec"
           }
         ]
       }
